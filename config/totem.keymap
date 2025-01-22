@@ -25,6 +25,8 @@
 &lt {
 };
 
+&mt { flavor = "tap-preferred"; };
+
 / {
     combos { compatible = "zmk,combos"; };
 
