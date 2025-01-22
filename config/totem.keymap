@@ -124,10 +124,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4  &kp N5           &kp NUMBER_6  &kp N7            &kp N8         &kp N9            &kp N0
-        &kp ESCAPE    &kp TAB       &kp BACKSPACE  &kp ENTER     &kp LS(ENTER)    &none         &sk LEFT_GUI      &sk LCTRL      &sk LEFT_ALT      &sk LEFT_SHIFT
-&trans  &kp LG(Z)     &kp LG(X)     &kp LG(C)      &kp LG(D)     &kp LG(V)        &none         &sk LS(LEFT_GUI)  &sk LS(LCTRL)  &sk LS(LEFT_ALT)  &sk LS(LA(LCTRL))  &none
-                                    &trans         &trans        &trans           &none         &none             &none
+        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4       &kp N5           &kp NUMBER_6  &kp N7            &kp N8         &kp N9            &kp N0
+        &kp ESCAPE    &kp TAB       &kp BACKSPACE  &kp ENTER          &kp LS(ENTER)    &none         &sk LEFT_GUI      &sk LCTRL      &sk LEFT_ALT      &sk LEFT_SHIFT
+&trans  &kp LG(Z)     &kp LG(X)     &kp LG(C)      &kp LA(BACKSPACE)  &kp LG(V)        &none         &sk LS(LEFT_GUI)  &sk LS(LCTRL)  &sk LS(LEFT_ALT)  &sk LS(LA(LCTRL))  &none
+                                    &trans         &trans             &trans           &none         &none             &none
             >;
         };
 
