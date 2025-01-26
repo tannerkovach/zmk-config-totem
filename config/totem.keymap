@@ -30,6 +30,22 @@
 / {
     combos { compatible = "zmk,combos"; };
 
+    macros {
+        mp: mp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp M &kp A &kp S &kp T &kp E &kp R &kp LS(C) &kp H &kp LS(I) &kp E &kp LS(F) &kp AMPS &kp M &kp J &kp O &kp L &kp N &kp I &kp R &kp M &kp A &kp R &kp K &kp N5 &kp I &kp V &kp E &kp EXCL>;
+            label = "MP";
+        };
+
+        gp: gp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(M) &kp J &kp O &kp L &kp N &kp I &kp R &kp M &kp A &kp R &kp K &kp N5 &kp I &kp V &kp E>;
+            label = "GP";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -76,7 +92,7 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &trans      &trans   &trans         &trans     &trans           &trans       &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &trans
+        &mp         &gp      &trans         &trans     &trans           &trans       &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &trans
         &kp ESCAPE  &kp TAB  &kp BACKSPACE  &kp ENTER  &kp LS(ENTER)    &kp HOME     &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END
 &trans  &kp Z       &kp X    &kp C          &kp D      &kp V            &kp PAGE_UP  &kp CARET        &kp PERCENT     &kp DOLLAR       &kp PAGE_DOWN  &trans
                              &trans         &trans     &trans           &trans       &trans           &trans
@@ -124,10 +140,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4       &kp N5           &kp NUMBER_6  &kp N7            &kp N8         &kp N9            &kp N0
-        &kp ESCAPE    &kp TAB       &kp BACKSPACE  &kp ENTER          &kp LS(ENTER)    &none         &sk LEFT_GUI      &sk LCTRL      &sk LEFT_ALT      &sk LEFT_SHIFT
-&trans  &kp LG(Z)     &kp LG(X)     &kp LG(C)      &kp LA(BACKSPACE)  &kp LG(V)        &none         &sk LS(LEFT_GUI)  &sk LS(LCTRL)  &sk LS(LEFT_ALT)  &sk LS(LA(LCTRL))  &none
-                                    &trans         &trans             &trans           &none         &none             &none
+        &trans      &trans       &kp DELETE         &trans         &trans    &trans  &trans            &trans         &trans            &trans
+        &kp ESCAPE  &kp TAB      &kp BACKSPACE      &kp ENTER      &trans    &none   &sk LEFT_GUI      &sk LCTRL      &sk LEFT_ALT      &sk LEFT_SHIFT
+&trans  &trans      &kp LS(TAB)  &kp LA(BACKSPACE)  &kp LS(ENTER)  &trans    &none   &sk LS(LEFT_GUI)  &sk LS(LCTRL)  &sk LS(LEFT_ALT)  &sk LS(LA(LCTRL))  &none
+                                 &trans             &trans         &trans    &none   &none             &none
             >;
         };
 
@@ -158,10 +174,10 @@
         num {
             label = "NUM";
             bindings = <
-        &trans            &trans            &trans            &trans            &trans        &trans            &trans      &trans      &trans      &trans
-        &kp N1            &kp N2            &kp N3            &kp N4            &kp N5        &kp N6            &kp N7      &kp N8      &kp N9      &kp N0
-&trans  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(N5)    &kp LG(NUMBER_6)  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp LG(N0)  &none
-                                            &trans            &trans            &trans        &none             &none       &none
+        &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)    &kp LG(N6)  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp LG(N0)
+        &kp N1      &kp N2      &kp N3      &kp N4      &kp N5        &kp N6      &kp N7      &kp N8      &kp N9      &kp N0
+&trans  &kp LG(Z)   &kp LG(X)   &kp LG(C)   &kp LG(D)   &kp LG(V)     &kp LG(K)   &kp LG(H)   &trans      &trans      &trans      &none
+                                &trans      &trans      &trans        &none       &none       &none
             >;
         };
     };
