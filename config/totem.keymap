@@ -116,10 +116,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp GRAVE        &kp LESS_THAN  &kp GREATER_THAN  &kp CARET             &kp UNDERSCORE    &kp AMPERSAND      &kp SEMICOLON  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SLASH
-        &kp EXCLAMATION  &kp MINUS      &kp PLUS          &kp EQUAL             &kp HASH          &kp AT_SIGN        &kp COLON      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION
-&trans  &kp TILDE        &kp DOLLAR     &kp ASTERISK      &kp NON_US_BACKSLASH  &kp PIPE          &kp DOUBLE_QUOTES  &kp PERCENT    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SINGLE_QUOTE  &trans
-                                        &trans            &trans                &trans            &trans             &trans         &trans
+        &kp GRAVE        &kp LESS_THAN  &kp GREATER_THAN  &kp CARET      &kp UNDERSCORE    &kp AMPERSAND      &kp SEMICOLON  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SLASH
+        &kp EXCLAMATION  &kp MINUS      &kp PLUS          &kp EQUAL      &kp HASH          &kp AT_SIGN        &kp COLON      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION
+&trans  &kp TILDE        &kp DOLLAR     &kp ASTERISK      &kp BACKSLASH  &kp PIPE          &kp DOUBLE_QUOTES  &kp PERCENT    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SINGLE_QUOTE  &trans
+                                        &trans            &trans         &trans            &trans             &trans         &trans
             >;
         };
 
