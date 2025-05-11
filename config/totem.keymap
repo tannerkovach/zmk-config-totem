@@ -23,9 +23,14 @@
 #define TVP2 5
 
 &lt {
+    tapping-term-ms = <180>;
+    flavor = "balanced";
 };
 
-&mt { flavor = "tap-preferred"; };
+&mt {
+    flavor = "tap-preferred";
+    tapping-term-ms = <200>;
+};
 
 / {
     combos { compatible = "zmk,combos"; };
