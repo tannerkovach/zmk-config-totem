@@ -82,10 +82,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-           &kp Q                       &kp W       &kp F        &kp P           &kp B             &kp J  &kp L           &kp U        &kp Y       &kp SEMI
-           &mt LS(LC(LA(LEFT_GUI))) A  &mt LALT R  &mt LCTRL S  &mt LEFT_GUI T  &kp G             &kp M  &mt LEFT_GUI N  &mt RCTRL E  &mt RALT I  &mt RIGHT_SHIFT O
-&kp LC(B)  &kp Z                       &kp X       &kp C        &kp D           &kp V             &kp K  &kp H           &kp COMMA    &kp DOT     &mt LS(LA(LC(LEFT_GUI))) SLASH  &lt 4 LC(B)
-                                                   &mo 5        &mo 3           &kp LEFT_SHIFT    &mo 2  &kp SPACE       &mo 1
+               &kp Q                       &kp W       &kp F        &kp P           &kp B             &kp J  &kp L           &kp U        &kp Y       &kp SEMI
+               &mt LS(LC(LA(LEFT_GUI))) A  &mt LALT R  &mt LCTRL S  &mt LEFT_GUI T  &kp G             &kp M  &mt LEFT_GUI N  &mt RCTRL E  &mt RALT I  &mt RIGHT_SHIFT O
+&kp LC(LS(B))  &kp Z                       &kp X       &kp C        &kp D           &kp V             &kp K  &kp H           &kp COMMA    &kp DOT     &mt LS(LA(LC(LEFT_GUI))) SLASH  &lt 4 LC(B)
+                                                       &mo 5        &mo 3           &kp LEFT_SHIFT    &mo 2  &kp SPACE       &mo 1
             >;
         };
 
