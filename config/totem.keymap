@@ -57,6 +57,8 @@
             label = "NEW_BEHAVIOR";
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp LC(LEFT_SHIFT)>;
+
+            tapping-term-ms = <250>;
         };
     };
 
