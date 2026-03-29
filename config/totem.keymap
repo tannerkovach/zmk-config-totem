@@ -28,8 +28,8 @@
 };
 
 &mt {
-    flavor = "tap-preferred";
-    tapping-term-ms = <200>;
+    flavor = "balanced";
+    tapping-term-ms = <185>;
 };
 
 / {
